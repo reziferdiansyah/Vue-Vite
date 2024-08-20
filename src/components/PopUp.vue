@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="PopUpData === true">
     <div
       class="fixed max-z-index top-0 bottom-0 left-0 right-0 px-6 py-3 flex flex-col"
     >
@@ -47,13 +47,16 @@ export default {
     const OneMonthsAfterDateNow = new Date(date);
     OneMonthsAfterDateNow.setMonth(date.getMonth() + 1);
     const afterOneMont = moments(OneMonthsAfterDateNow).format("DD MMMM YYYY");
+
     return {
       DateOneNextMonth: afterOneMont,
+      PopUpData: true,
     };
   },
+
   methods: {
     OpenUndangan() {
-      // use router
+      this.PopUpData = false;
     },
   },
 };
