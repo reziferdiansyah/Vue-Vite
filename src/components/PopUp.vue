@@ -7,9 +7,9 @@
 
       <div class="flex flex-col items-center gap-5 max-z-index">
         <!-- Title -->
-        <h2 class="text-title mt-2 font-bold text-center text-white my-1">
+        <!-- <h2 class="text-title mt-2 font-bold text-center text-white my-1">
           Undangan Pernikahan
-        </h2>
+        </h2> -->
 
         <!-- Name Information -->
         <h3
@@ -23,6 +23,14 @@
           {{ DateOneNextMonth }}
         </span>
 
+        <!-- Invitation to  -->
+        <div>
+          <p>Undangan Spesial Untuk</p>
+          <p>Bapak/Ibu/Sahabat</p>
+        </div>
+
+        <div>Name Invitation</div>
+
         <!-- Button Open -->
         <button
           class="bg-transparent mt-10 text-white border-b-1 border-solid border-white rounded-md px-4 py-2 w-3/5"
@@ -31,6 +39,8 @@
         >
           Buka Undangan
         </button>
+
+        <div>Mohon maaf apabila ada kesalahan penulisan nama/gelar</div>
       </div>
     </div>
   </div>
