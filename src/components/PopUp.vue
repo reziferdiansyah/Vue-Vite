@@ -5,7 +5,7 @@
     >
       <img class="background" src="/src/assets/images/popUp.jpg" />
 
-      <div class="flex flex-col items-center gap-6 max-z-index">
+      <div class="flex flex-col items-center gap-5 max-z-index">
         <!-- Title -->
         <h2 class="text-title mt-2 font-bold text-center text-white my-1">
           Undangan Pernikahan
@@ -88,7 +88,7 @@ img.background {
   height: 100%;
 }
 .max-z-index {
-  /* justify-content: center; */
+  justify-content: center;
   z-index: 100000;
 }
 </style>
