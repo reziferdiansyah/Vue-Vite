@@ -3,7 +3,7 @@
     <div
       class="fixed max-z-index top-0 bottom-0 left-0 right-0 px-6 py-3 flex flex-col"
     >
-      <img class="background" src="/src/assets/images/popUp.jpg" />
+      <img class="background" alt="popup" src="/src/assets/images/popUp.jpg" />
       <div class="flex flex-col items-center gap-5 max-z-index">
         <!-- Name Information -->
         <h3
@@ -58,6 +58,8 @@ export default {
   methods: {
     OpenUndangan() {
       this.PopUpData = false;
+      let depositSound = `https://api.our-wedding.link/uploads/d45d5820-3802-11ec-b847-e92596a7aafa.mp3`;
+      depositSound.play();
     },
   },
 };

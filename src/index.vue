@@ -2,6 +2,7 @@
 import Audio from "./components/Audio.vue";
 import PopUp from "./components/PopUp.vue";
 import Header from "./components/Header.vue";
+import CommonMaster from "./components/commonMaster.vue";
 </script>
 
 <template>
@@ -9,6 +10,8 @@ import Header from "./components/Header.vue";
     <!-- ADD HEADER -->
     <Header />
 
+    <!-- CONTENT -->
+    <CommonMaster />
     <!-- Pop UP Undangan -->
     <PopUp />
 

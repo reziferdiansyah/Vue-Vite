@@ -1,10 +1,7 @@
 <template>
   <div class="music-control">
     <audio controls autoplay style="margin-top: -10px">
-      <source
-        src="https://api.our-wedding.link/uploads/d45d5820-3802-11ec-b847-e92596a7aafa.mp3"
-        type="audio/mpeg"
-      />
+      <source src="/src/assets/images/audiostatic.mp3" type="audio/mpeg" />
       Your browser does not support the audio tag.
     </audio>
   </div>
