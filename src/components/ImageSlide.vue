@@ -54,7 +54,7 @@ export default defineComponent({
       {
         id: 1,
         type: "mobile",
-        path: "/src/assets/images/slide/slide1.png",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 1",
       },
       {
