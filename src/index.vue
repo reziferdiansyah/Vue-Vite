@@ -1,7 +1,7 @@
 <script setup>
 import PopUp from "./components/PopUp.vue";
 import Header from "./components/Header.vue";
-import CommonMaster from "./components/commonMaster.vue";
+import Content from "./components/Content.vue"
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import CommonMaster from "./components/commonMaster.vue";
     <Header />
 
     <!-- CONTENT -->
-    <CommonMaster />
+    <Content />
 
     <!-- Pop UP Undangan -->
     <PopUp />
