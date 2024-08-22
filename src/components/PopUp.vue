@@ -58,8 +58,6 @@ export default {
   methods: {
     OpenUndangan() {
       this.PopUpData = false;
-      let depositSound = `https://api.our-wedding.link/uploads/d45d5820-3802-11ec-b847-e92596a7aafa.mp3`;
-      depositSound.play();
     },
   },
 };
