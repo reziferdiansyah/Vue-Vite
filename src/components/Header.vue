@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-blue-500">
     <div v-if="DummyData === true" class="dummy-mode">
       sedang menggunakan data contoh
     </div>

@@ -8,8 +8,10 @@
       :wrap-around="true"
       v-model="currentSlide"
     >
-      <Slide v-for="slide in 6" :key="slide">
-        <div class="carousel__item">{{ slide }}</div>
+      <Slide v-for="slide in fetchStaticImg" :key="slide.id">
+        <div class="carousel__item">
+          <img :alt="slide.alt" :src="slide.path" />
+        </div>
       </Slide>
     </Carousel>
 
@@ -21,9 +23,13 @@
       v-model="currentSlide"
       ref="carousel"
     >
-      <Slide v-for="slide in 6" :key="slide">
-        <div class="carousel__item" @click="slideTo(slide - 1)">
-          {{ slide }}
+      <Slide
+        v-for="slideThumbnails in fetchStaticImg"
+        :key="slideThumbnails.id"
+        style="margin: 10px !important"
+      >
+        <div class="carousel__item" @click="slideTo(fetchStaticImg - 1)">
+          <img :alt="slideThumbnails.alt" :src="slideThumbnails.path" />
         </div>
       </Slide>
     </Carousel>
@@ -42,9 +48,52 @@ export default defineComponent({
     Slide,
     Navigation,
   },
-  data: () => ({
-    currentSlide: 0,
-  }),
+
+  data() {
+    const staticImages = [
+      {
+        id: 1,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide1.png",
+        alt: "Images 1",
+      },
+      {
+        id: 2,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide2.png",
+        alt: "Images 2",
+      },
+      {
+        id: 3,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide1.png",
+        alt: "Images 3",
+      },
+      {
+        id: 4,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide2.png",
+        alt: "Images 4",
+      },
+      {
+        id: 5,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide1.png",
+        alt: "Images 5",
+      },
+      {
+        id: 6,
+        type: "mobile",
+        path: "/src/assets/images/slide/slide2.png",
+        alt: "Images 6",
+      },
+    ];
+    return {
+      currentSlide: 0,
+      fetchStaticImg: staticImages,
+    };
+  },
+
   methods: {
     slideTo(val) {
       this.currentSlide = val;
