@@ -3,7 +3,6 @@
     <!-- LIST MASTER -->
     <Carousel
       :autoplay="2000"
-      :loop="true"
       id="gallery"
       :items-to-show="1"
       :wrap-around="true"
