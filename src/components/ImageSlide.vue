@@ -3,9 +3,10 @@
     <!-- LIST MASTER -->
     <Carousel
       :autoplay="2000"
+      :loop="true"
       id="gallery"
       :items-to-show="1"
-      :wrap-around="false"
+      :wrap-around="true"
       v-model="currentSlide"
     >
       <Slide v-for="slide in 6" :key="slide">
