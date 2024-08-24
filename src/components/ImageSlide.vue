@@ -60,31 +60,31 @@ export default defineComponent({
       {
         id: 2,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "/src/assets/images/popUp.jpg",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "/src/assets/images/slide1.png",
+        path: "/src/assets/images/popUp.jpg",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "/src/assets/images/popUp.jpg",
         alt: "Images 4",
       },
       {
         id: 5,
         type: "mobile",
-        path: "/src/assets/images/slide1.png",
+        path: "/src/assets/images/popUp.jpg",
         alt: "Images 5",
       },
       {
         id: 6,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "/src/assets/images/popUp.jpg",
         alt: "Images 6",
       },
     ];
