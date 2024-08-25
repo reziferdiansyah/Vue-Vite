@@ -60,31 +60,31 @@ export default defineComponent({
       {
         id: 2,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "/src/assets/images/slide1.png",
+        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
         alt: "Images 4",
       },
       {
         id: 5,
         type: "mobile",
-        path: "/src/assets/images/slide1.png",
+        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
         alt: "Images 5",
       },
       {
         id: 6,
         type: "mobile",
-        path: "/src/assets/images/slide2.png",
+        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
         alt: "Images 6",
       },
     ];
