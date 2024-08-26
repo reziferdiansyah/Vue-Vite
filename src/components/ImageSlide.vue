@@ -28,8 +28,7 @@
         :key="slideThumbnails.id"
         style="margin: 10px !important"
       >
-        <!-- <div class="carousel__item" @click="slideTo(fetchStaticImg - 1)"> -->
-        <div class="carousel__item">
+        <div class="carousel__item" @click="slideTo(slideThumbnails.id - 1)">
           <img :alt="slideThumbnails.alt" :src="slideThumbnails.path" />
         </div>
       </Slide>
@@ -55,38 +54,26 @@ export default defineComponent({
       {
         id: 1,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/77d8ba99973a43ee370272bb94e05369.webp",
         alt: "Images 1",
       },
       {
         id: 2,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c9928a05bee4490a6ff84ef6903db1b2.webp",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/4120ba70fe5358fe249b8061c668cf7d.webp",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
-        alt: "Images 4",
-      },
-      {
-        id: 5,
-        type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
-        alt: "Images 5",
-      },
-      {
-        id: 6,
-        type: "mobile",
-        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
-        alt: "Images 6",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c4b5df8307a036787c23adcc7debfd3d.webp",
+        alt: "Images 3",
       },
     ];
     return {
