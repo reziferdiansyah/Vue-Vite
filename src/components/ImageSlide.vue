@@ -28,7 +28,8 @@
         :key="slideThumbnails.id"
         style="margin: 10px !important"
       >
-        <div class="carousel__item" @click="slideTo(fetchStaticImg - 1)">
+        <!-- <div class="carousel__item" @click="slideTo(fetchStaticImg - 1)"> -->
+        <div class="carousel__item">
           <img :alt="slideThumbnails.alt" :src="slideThumbnails.path" />
         </div>
       </Slide>
@@ -60,31 +61,31 @@ export default defineComponent({
       {
         id: 2,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 4",
       },
       {
         id: 5,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 5",
       },
       {
         id: 6,
         type: "mobile",
-        path: "https://api.our-wedding.link/uploads/0c15f5f0-628d-11ed-a764-e99c2f374ae2.jpg",
+        path: "https://api.our-wedding.link/uploads/4ef934b0-0852-11ef-8497-fd97e9d3efdf.jpg",
         alt: "Images 6",
       },
     ];
