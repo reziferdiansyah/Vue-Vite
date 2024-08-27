@@ -18,7 +18,7 @@
     <!-- PREVIEW -->
     <Carousel
       id="thumbnails"
-      :items-to-show="3"
+      :items-to-show="2"
       :wrap-around="true"
       v-model="currentSlide"
       ref="carousel"
@@ -26,7 +26,7 @@
       <Slide
         v-for="slideThumbnails in fetchStaticImg"
         :key="slideThumbnails.id"
-        style="margin: 10px !important"
+        style="margin: 5px !important"
       >
         <div class="carousel__item" @click="slideTo(slideThumbnails.id - 1)">
           <img :alt="slideThumbnails.alt" :src="slideThumbnails.path" />
@@ -73,6 +73,12 @@ export default defineComponent({
         id: 4,
         type: "mobile",
         path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c4b5df8307a036787c23adcc7debfd3d.webp",
+        alt: "Images 3",
+      },
+      {
+        id: 5,
+        type: "mobile",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/popup/8a643441a6687eeec9611e79c1779e95.webp",
         alt: "Images 3",
       },
     ];

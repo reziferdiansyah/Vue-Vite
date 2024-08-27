@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-blue-500">
+  <div>
     <div v-if="DummyData === true" class="dummy-mode">
       sedang menggunakan data contoh
     </div>
     <div class="music-control">
-      <audio controls autoplay style="margin-top: -10px">
+      <audio controls autoplay style="margin-top: -5px">
         <source src="/src/assets/images/audiostatic.mp3" type="audio/mpeg" />
         Your browser does not support the audio tag.
       </audio>
