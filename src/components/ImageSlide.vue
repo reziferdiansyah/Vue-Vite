@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500">
+  <div>
     <!-- LIST MASTER -->
     <Carousel
       :autoplay="2000"
