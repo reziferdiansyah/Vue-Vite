@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500">
+  <div>
     <!-- LIST MASTER -->
     <Carousel
       :autoplay="2000"
@@ -18,7 +18,7 @@
     <!-- PREVIEW -->
     <Carousel
       id="thumbnails"
-      :items-to-show="3"
+      :items-to-show="2"
       :wrap-around="true"
       v-model="currentSlide"
       ref="carousel"
@@ -26,9 +26,9 @@
       <Slide
         v-for="slideThumbnails in fetchStaticImg"
         :key="slideThumbnails.id"
-        style="margin: 10px !important"
+        style="margin: 5px !important"
       >
-        <div class="carousel__item" @click="slideTo(fetchStaticImg - 1)">
+        <div class="carousel__item" @click="slideTo(slideThumbnails.id - 1)">
           <img :alt="slideThumbnails.alt" :src="slideThumbnails.path" />
         </div>
       </Slide>
@@ -54,38 +54,32 @@ export default defineComponent({
       {
         id: 1,
         type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/77d8ba99973a43ee370272bb94e05369.webp",
         alt: "Images 1",
       },
       {
         id: 2,
         type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c9928a05bee4490a6ff84ef6903db1b2.webp",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/4120ba70fe5358fe249b8061c668cf7d.webp",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
-        alt: "Images 4",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c4b5df8307a036787c23adcc7debfd3d.webp",
+        alt: "Images 3",
       },
       {
         id: 5,
         type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
-        alt: "Images 5",
-      },
-      {
-        id: 6,
-        type: "mobile",
-        path: "/src/assets/images/popUp.jpg",
-        alt: "Images 6",
+        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/popup/8a643441a6687eeec9611e79c1779e95.webp",
+        alt: "Images 3",
       },
     ];
     return {
