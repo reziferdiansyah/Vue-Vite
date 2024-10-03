@@ -54,31 +54,31 @@ export default defineComponent({
       {
         id: 1,
         type: "mobile",
-        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/77d8ba99973a43ee370272bb94e05369.webp",
+        path: "/src/assets/images/example-img.webp",
         alt: "Images 1",
       },
       {
         id: 2,
         type: "mobile",
-        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c9928a05bee4490a6ff84ef6903db1b2.webp",
+        path: "/src/assets/images/example-img.webp",
         alt: "Images 2",
       },
       {
         id: 3,
         type: "mobile",
-        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/4120ba70fe5358fe249b8061c668cf7d.webp",
+        path: "/src/assets/images/example-img.webp",
         alt: "Images 3",
       },
       {
         id: 4,
         type: "mobile",
-        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/mobile/c4b5df8307a036787c23adcc7debfd3d.webp",
+        path: "/src/assets/images/example-img.webp",
         alt: "Images 3",
       },
       {
         id: 5,
         type: "mobile",
-        path: "https://cktch.sgp1.cdn.digitaloceanspaces.com/staging/banner/popup/8a643441a6687eeec9611e79c1779e95.webp",
+        path: "/src/assets/images/example-img.webp",
         alt: "Images 3",
       },
     ];
